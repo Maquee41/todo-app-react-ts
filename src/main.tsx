@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.scss'
-import App from './App.tsx'
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+import { ToDoListPage } from "./pages/ToDoListPage"
+import "./assets/scss/normalize.scss"
+import "./assets/scss/style.scss"
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <ToDoListPage />
   </StrictMode>
 )
